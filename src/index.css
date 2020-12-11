@@ -1,0 +1,20 @@
+/*! @import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    #app {
+	@apply font-sans antialiased text-center text-green-600 mt-32 leading-loose dark:text-red-500;
+    }
+
+    .btn {
+	@apply px-2 py-1 bg-blue-600 text-white m-1 rounded-md dark:bg-blue-700 hover:bg-blue-800;
+    }
+}
+
+@layer base {
+    body {
+	@apply bg-gray-50 dark:bg-gray-800 min-h-screen h-full;
+    }
+}
