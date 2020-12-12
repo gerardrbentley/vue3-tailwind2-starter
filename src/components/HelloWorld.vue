@@ -2,15 +2,19 @@
   <h1>{{ msg }}</h1>
   <p>
     Recommended setup:
-    <a class="btn" href="https://code.visualstudio.com/" target="_blank">VSCode</a>
+    <a class="btn" href="https://code.visualstudio.com/" target="_blank"
+      >VSCode</a
+    >
     +
-    <a class="btn"
+    <a
+      class="btn"
       href="https://marketplace.visualstudio.com/items?itemName=octref.vetur"
       target="_blank"
       >Vetur</a
     >
     +
-    <a class="btn"
+    <a
+      class="btn"
       href="https://marketplace.visualstudio.com/items?itemName=znck.vue-language-features-insiders"
       target="_blank"
       >Vue Language Features (Insiders)</a
@@ -18,9 +22,13 @@
   </p>
   <p>
     Make sure to use workspace version of TypeScript to get improved support via
-    <a class="btn" href="https://github.com/znck/vue-developer-experience" target="_blank"
+    <a
+      class="btn"
+      href="https://github.com/znck/vue-developer-experience"
+      target="_blank"
       >@vuedx</a
-    >. Note @vuedx is still experimental and this setup is provided for early feedback.
+    >. Note @vuedx is still experimental and this setup is provided for early
+    feedback.
   </p>
   <button class="btn" @click="count++">count is: {{ count }}</button>
   <p>
@@ -29,19 +37,19 @@
 </template>
 
 <script lang="ts">
-import { ref, defineComponent } from 'vue'
+import {ref, defineComponent} from 'vue';
 
 export default defineComponent({
   name: 'HelloWorld',
   props: {
     msg: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
   setup: () => {
-    const count = ref(0)
-    return { count }
-  }
-})
+    const count = ref(0);
+    return {count};
+  },
+});
 </script>
