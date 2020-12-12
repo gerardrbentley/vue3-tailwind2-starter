@@ -8,9 +8,19 @@
 
 [Tailwind (Vite Install Docs)](https://tailwindcss.com/docs/guides/vue-3-vite)
 
+Setup:
+
+``` bash
+$ yarn
+$ yarn dev
+
+# Build production files in ./dist/
+$ yarn build
+```
+
 # Branches
 
-## main
+## bare
 
 Simple Starter Code akin to create-vite-app, but with Tailwind and dark-mode toggle set up.
 
@@ -33,12 +43,31 @@ Files:
 - src/App.vue: main component for Vue, contains logic for dark-mode and an example of using tailwind in a template
 - src/index.css: used in `main.ts` for the whole app. Has examples for styling classes, id's, and elements.
 
-Setup:
+Commands:
 
-``` bash
-$ yarn
-$ yarn dev
+- yarn dev
+- yarn build
 
-# Build production files in ./dist/
-$ yarn build
-```
+## lint
+
+Packages:
+
+...bare +
+
+- prettier
+- eslint
+- typescript-eslint
+- vue-eslint-plugin
+
+Files:
+
+- .eslintrc.js: setup for eslint
+- .prettierrc.json: setup for prettier
+- .eslintignore: ignored files during eslint
+
+Commands:
+
+- yarn dev
+- yarn build
+- yarn lint: prettier + eslint + typecheck, no fixing
+- yarn fix: above, with fixing (except unfixables)
