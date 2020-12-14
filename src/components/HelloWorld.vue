@@ -1,5 +1,5 @@
 <template>
-  <h1>{{ msg }}</h1>
+  <h1 data-test="message">{{ msg }}</h1>
   <p>
     Recommended setup:
     <a class="btn" href="https://code.visualstudio.com/" target="_blank"
@@ -30,7 +30,9 @@
     >. Note @vuedx is still experimental and this setup is provided for early
     feedback.
   </p>
-  <button class="btn" @click="count++">count is: {{ count }}</button>
+  <button data-test="counter" class="btn" @click="count++">
+    count is: {{ count }}
+  </button>
   <p>
     Edit <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
