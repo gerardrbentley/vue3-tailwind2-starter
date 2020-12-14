@@ -25,17 +25,6 @@ module.exports = {
     'prettier/@typescript-eslint',
   ],
   rules: {
-    'no-restricted-properties': [
-      'error',
-      {
-        property: 'only',
-        object: 'describe',
-      },
-      {
-        property: 'only',
-        object: 'it',
-      },
-    ],
     quotes: [
       'warn',
       'single',
@@ -51,5 +40,15 @@ module.exports = {
     eqeqeq: 'error',
     'block-scoped-var': 'error',
     'prettier/prettier': 'error',
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
   },
+  overrides: [
+    {
+      files: ['**/*.spec.{j,t}s?(x)$'],
+      env: {
+        jest: true,
+      },
+    },
+  ],
 };
