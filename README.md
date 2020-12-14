@@ -71,3 +71,26 @@ Commands:
 - yarn build
 - yarn lint: prettier + eslint + typecheck, no fixing
 - yarn fix: above, with fixing (except unfixables)
+
+## tested
+
+TODO: investigate xComponent.spec.vue pattern, only xComponent.spec.ts works at the moment
+
+...lint +
+
+- jest
+- vue-jest
+- ts-jest
+- jest-transform-stub
+- @vue/test-utils
+- @types/jest
+
+Files:
+
+- jest.config: specifies jest to use "jsdom", run tests on any file that matches xxx.spec.ts or xxx.spec.vue (only .ts works, but .vue is supposed to)
+- src/App.spec.ts: Tests vue app mounting and useTailwindDarkMode hook using jest mock
+- src/components/HelloWorld.spec.ts: Tests a single component and its function
+
+Commands:
+
+- yarn test: runs jest testing command
