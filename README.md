@@ -2,6 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9466db12-fffb-4d4a-8d8e-a7a1f3d15897/deploy-status)](https://app.netlify.com/sites/determined-ride-d3788b/deploys)
 
+Live at: [https://determined-ride-d3788b.netlify.app/](https://determined-ride-d3788b.netlify.app/)
+
 [![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gerardrbentley/vue3-tailwind2-starter)
 
 Set of starter templates for using Vue with Vite and Tailwind2 (optionally with linting tools and jest testing). PostCSS 8 caused some problems with running Vite with Tailwind2, but the Tailwind team released a backwards compatible package and setup guide to make it hurt less (for the time being).
